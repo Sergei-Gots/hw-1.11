@@ -30,8 +30,7 @@ public class Main {
     }
 
     private static void printShippingDetails(int distance, int time) {
-        System.out.println("Дистанция до получателя составляет " + distance + " км.");
-
+        System.out.print("Дистанция до получателя составляет " + distance + " км. ");
         System.out.print("Доставка займёт ");
         if (time < 2) {
             System.out.println("сутки.");
@@ -112,12 +111,13 @@ public class Main {
         if (manufactureYear == LocalDate.now().getYear()) {
             System.out.print("облегчённую ");
         }
-        System.out.print("версию приложения для ");
+        System.out.print("версию приложения для устройства на базе ");
         if (clientOS == OS.IOS) {
-            System.out.println("iOS по ссылке.");
+            System.out.print("iOS ");
         } else {
-            System.out.println("Android по ссылке.");
+            System.out.print("Android ");
         }
+        System.out.println(manufactureYear + " года выпуска по ссылке.");
     }
 
     /**
